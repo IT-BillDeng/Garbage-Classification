@@ -1,8 +1,6 @@
 from __future__ import  absolute_import
 from __future__ import  division
 import torch as t
-# from data.voc_dataset import VOCBboxDataset
-# from data.SDL_dataset import SDLBboxDataset
 from data.Trash_dataset import TrashBboxDataset
 from skimage import transform as sktsf
 from torchvision import transforms as tvtsf
@@ -103,7 +101,6 @@ class Transform(object):
 class Dataset:
     def __init__(self, opt, split='trainval'):
         self.opt = opt
-        # self.db = VOCBboxDataset(opt.voc_data_dir)
         self.db = TrashBboxDataset(opt.Trash_data_dir, split=split)
         self.tsf = Transform(opt.min_size, opt.max_size)
 
@@ -122,7 +119,6 @@ class Dataset:
 class TestDataset:
     def __init__(self, opt, split='test', use_difficult=False):
         self.opt = opt
-        # self.db = VOCBboxDataset(opt.voc_data_dir, split=split, use_difficult=use_difficult)
         self.db = TrashBboxDataset(opt.Trash_data_dir, split=split, use_difficult=use_difficult)
 
     def __getitem__(self, idx):
