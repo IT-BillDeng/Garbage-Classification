@@ -8,7 +8,7 @@ The final homework of the scoure Deep Learning in ISE, SYSU.
 
 ![img](imgs/pred_img.jpg)
 
-**Tercher:** Liu Mengyuan
+**Teacher:** Liu Mengyuan
 
 **Group Member:** Deng Kaiyuan, Deng Yushan, Ding Yuhao, Huang Zihao, Li Hengzhi
 
@@ -30,7 +30,7 @@ Limited by devices with relatively low performance, we have to make a trade-off 
 
 |   GPU                 | Inference | Trainining | GPU Memory |
 | :------:              | :-------: | :--------: | :---------:|
-|   GeForce RTX 2060    |   3 fps   |     3 fps  | 3 GB |
+|   GeForce RTX 2060 Laptop   |   3 fps   |     3 fps  | 3 GB |
 
 
 
